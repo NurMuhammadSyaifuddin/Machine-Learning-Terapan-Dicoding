@@ -242,7 +242,7 @@ Dari tabel di atas dapat memberikan informasi bahwa ketiga model yang dibangun m
 # Daftar Pustaka
 
 Fatiharani, F. R. (2022). PENGARUH PUPUK KANDANG AYAM DAN DOLOMIT TERHADAP NITROGEN ( N ), FOSFOR ( P ) DAN KALIUM ( K ) TANAH SERTA PERTUMBUHAN DAN HASIL TANAMAN     
-    SORGUM ( Sorghum bicolor ( L .) Moench ) PADA TANAH PASANG SURUT THE EFFECTS OF CHICKEN MANURE FERTILIZER AND DOLOMITE ON SOIL ’ S NITROGEN ( N ), PHOSPHOR ( P )
+    &nbsp;SORGUM ( Sorghum bicolor ( L .) Moench ) PADA TANAH PASANG SURUT THE EFFECTS OF CHICKEN MANURE FERTILIZER AND DOLOMITE ON SOIL ’ S NITROGEN ( N ), PHOSPHOR ( P )
     AND POTASSIUM ( K ) ALSO GROWTH AND PRODUCTION OF SORGHUM ( Sorghum bicolor ( L .) Moench ) IN TIDAL SOIL.
 Kusumaningrum, S. I. (2019). Pemanfaatan Sektor Pertanian Sebagai Penunjang Pertumbuhan Perekonomian Indonesia. Transaksi, 11(1), 80–89.
     http://ejournal.atmajaya.ac.id/index.php/transaksi/article/view/477

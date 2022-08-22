@@ -242,13 +242,13 @@ Dari tabel di atas dapat memberikan informasi bahwa ketiga model yang dibangun m
 # Daftar Pustaka
 
 Fatiharani, F. R. (2022). PENGARUH PUPUK KANDANG AYAM DAN DOLOMIT TERHADAP NITROGEN ( N ), FOSFOR ( P ) DAN KALIUM ( K ) TANAH SERTA PERTUMBUHAN DAN HASIL TANAMAN     
-    &nbsp;SORGUM ( Sorghum bicolor ( L .) Moench ) PADA TANAH PASANG SURUT THE EFFECTS OF CHICKEN MANURE FERTILIZER AND DOLOMITE ON SOIL ’ S NITROGEN ( N ), PHOSPHOR ( P )
-    AND POTASSIUM ( K ) ALSO GROWTH AND PRODUCTION OF SORGHUM ( Sorghum bicolor ( L .) Moench ) IN TIDAL SOIL.
+    SORGUM ( Sorghum bicolor ( L .) Moench ) PADA TANAH PASANG SURUT THE EFFECTS OF CHICKEN MANURE FERTILIZER AND DOLOMITE ON SOIL ’ S NITROGEN ( N ), PHOSPHOR ( P )
+    AND POTASSIUM ( K ) ALSO GROWTH AND PRODUCTION OF SORGHUM ( Sorghum bicolor ( L .) Moench ) IN TIDAL SOIL.<br><br>
 Kusumaningrum, S. I. (2019). Pemanfaatan Sektor Pertanian Sebagai Penunjang Pertumbuhan Perekonomian Indonesia. Transaksi, 11(1), 80–89.
-    http://ejournal.atmajaya.ac.id/index.php/transaksi/article/view/477
+    http://ejournal.atmajaya.ac.id/index.php/transaksi/article/view/477<br><br>
 Mulziatuddin, M., & Aidar, N. (2018). ANALISIS PENDAPATAN PEMILIK LAHAN AKIBAT DAMPAK ALIH FUNGSI LAHAN PERTANIAN KE PERUMAHAN (Studi Kasus: Kecamatan Ingin
-    Jaya,Kabupaten Aceh Besar). Jurnal Ilmiah Mahasiswa (JIM) ISSN.2549-8355 Ekonomi PembangunanFakultas Ekonomi Dan Bisnis Unsyiah, 3(2), 7.
-Telaah, D., Niaga, T., & Pertanian, P. (2020). Tata niaga produk pertanian. 13–28.
+    Jaya,Kabupaten Aceh Besar). Jurnal Ilmiah Mahasiswa (JIM) ISSN.2549-8355 Ekonomi PembangunanFakultas Ekonomi Dan Bisnis Unsyiah, 3(2), 7.<br><br>
+Telaah, D., Niaga, T., & Pertanian, P. (2020). Tata niaga produk pertanian. 13–28.<br><br>
 Wiratama, A. A., & Dewi, N. W. Y. (2021). Penentuan Harga Pokok Produksi Cengkeh Pada Petani Di Catur Desa. Jurnal Ilmiah Mahasiswa Akuntansi, 12(2), 436–445.
 
 

@@ -3,7 +3,7 @@
 
 ## Domain Proyek
 #### <div align="left"><span style="white-space: pre-wrap; font: normal 12pt Arial; line-height: 1.5;">Domain proyek yang dipilih dalam proyek machine learning ini adalah mengenai **pertanian** dengan judul proyek "Prediksi Strategis Pemilihan Jenis Tanaman untuk Lahan Pertanian Tertentu"</span></div>
-![image.png](attachment:image.png)
+![agriculture](https://user-images.githubusercontent.com/68520848/185949572-ede9b8bd-22c6-4b46-b630-d9a27c1e4440.jpg)
 
 #### <div align="left"><span style="white-space: pre-wrap; font: normal 12pt Arial; line-height: 1.5;">**Latar Belakang**<br>Sektor pertanian di Indonesia hingga saat ini memegang peranan penting dalam perekonomian nasional dan pembangunan negara secara keseluruhan. Pertanian masih menjadi andalan sebagai sumber bahan pangan (Kusumaningrum, 2019) dan sumber mata pencaharian terbesar di Indonesia, bahkan hampir di setiap daerah di Indonesia terdapat lahan pertanian (Mulziatuddin & Aidar, 2018). Sebelum melakukan proses pertanian maka seorang petani harus mengumpulkan berbagai informasi yang dapat mempengaruhi proses pertanian terlebih dahulu. Informasi yang diperlukan antara lain seperti karaktersistik, struktur dan tekstur lahan, jenis tanaman yang akan ditanam, dan target panen (Telaah et al., 2020). Namun pada kenyataannya, dalam melakukan penanaman tanaman pada suatu lahan pertanian, tidak banyak petani yang memperhitungkan apakah lahan yang dimiliki cocok untuk ditanami jenis tanaman yang telah ditentukan atau tidak (Wiratama & Dewi, 2021). Keputusan seorang petani mengenai jenis tanaman apa yang akan ditanam di lahannya pada umumnya tergantung pada intuisi petani itu sendiri, petani akan lebih memilih tanaman yang sedang tren di wilayah sekitarnya dan biasanya mereka tidak memiliki pengetahuan yang cukup tentang kandungan nutrisi lahan seperti nitrogen, fosfor, kalium dalam lahan (Fatiharani, 2022). Sehingga, jika petani mengambil keputusan yang salah pada pemilihan tanaman maka hasil panen menjadi tidak optimal dan berpotensi mengalami kerugian yang cukup besar nantinya.<br><br>Berdasarkan permasalahan tersebut, maka pada proyek ini akan dibangun suatu model machine larning untuk memprediksi jenis tanaman yang cocok ditanam di lahan pertanian tertentu berdasarkan parameter kandungan N, P, K (Nitrogen, Fosfor, Kalium) pada lahan, curah hujan, suhu, kelembaban dan pH. Dengan adanya model machine learning ini, diharapkan dapat membantu dan memudahkan petani dalam mengambil keputusan tentang strategi pertanian khususnya dalam memilih jenis tanaman yang cocok untuk lahan mereka, sehingga dapat meminimalisir kesalahan penanaman serta dapat meningkatkan hasil produksi di sektor pertanian. Kemudian untuk tahap pengembangan selanjutnya implementasi dari model ini dapat dijalankan pada sebuah aplikasi berbasis web ataupun mobile.</span></div>
 
@@ -108,51 +108,51 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini diantaranya :
 - **Sebaran atau Distribusi Data pada Setiap Fitur**
   <br> Berikut merupakan visualisasi data yang menunjukkan sebaran/ distribusi data pada setiap fitur numerik (`N, P, K, temperature, humidity, ph, rainfall`) :
 
-![image-4.png](attachment:image-4.png)
-![image-5.png](attachment:image-5.png)
-![image-6.png](attachment:image-6.png)
-![image-7.png](attachment:image-7.png)
-![image-8.png](attachment:image-8.png)
-![image-9.png](attachment:image-9.png)
-![image-10.png](attachment:image-10.png)
+![image](https://user-images.githubusercontent.com/68520848/185949945-f57894e7-7d7f-4ed6-a507-3dd3d077e1c3.png)
+![image](https://user-images.githubusercontent.com/68520848/185950036-c8731476-31f2-49b5-bada-ed2d068f3ae5.png)
+![image](https://user-images.githubusercontent.com/68520848/185950125-ee823052-18e8-4eab-ae80-90c32ff0860f.png)
+![image](https://user-images.githubusercontent.com/68520848/185950254-4e5102de-f33e-42ed-b250-9bc97c5f8cc2.png)
+![image](https://user-images.githubusercontent.com/68520848/185950327-2cfaa553-34de-4519-a50b-946ad6a8aca6.png)
+![image](https://user-images.githubusercontent.com/68520848/185950406-407ebe80-f561-4480-b949-3e059b6b4162.png)
+![image](https://user-images.githubusercontent.com/68520848/185950478-aac4a4e2-e5ce-4427-be42-f746e3e57c11.png)
 
 Berdasarkan hasil visualisasi data diatas, dapat terlihat sebaran atau distribusi data yang ada pada setiap fitur. Termasuk nilai minimum, median, maksimum, Q1, Q3, batas atas dan batas bawah. Selain itu dapat dilihat juga pada beberapa fitur masih terdapat nilai outliers.
   
   Berikut merupakan visualisasi data yang menunjukkan sebaran/distribusi data pada fitur target (`label`) :
   
-  ![image.png](attachment:image.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185950597-14c2e83d-9652-4773-a832-992302504863.png)
 
 Berdasarkan hasil visualisasi dari fitur target 'label' dapat memberikan informasi bahwa dataset sudah seimbang dengan jumlah sampel masing-masing label yaitu 100 sampel, sehingga tidak perlu menyeimbangkan data lagi.
   
 - **Rata-Rata Nilai pada fitur Numerik di Setiap label**
   <br> Berikut visualisasi rata-rata kandungan `N, P, K` terhadap setiap label :
   
-  ![image-4.png](attachment:image-4.png)
-  ![image-2.png](attachment:image-2.png)
-  ![image-3.png](attachment:image-3.png)
-  ![image-5.png](attachment:image-5.png)
-  ![image-6.png](attachment:image-6.png)
-  ![image-7.png](attachment:image-7.png)
-  ![image-8.png](attachment:image-8.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185950722-c37bdfbe-d625-4ea1-8cb8-9d6dbffe8e73.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185950781-23ad2873-87df-4013-9c79-bcfb0c3af622.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185950903-53b0abd3-2115-4271-87de-43ccaf997638.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185950972-e3a3d89a-272c-42b5-b430-c39fc883f0eb.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951075-73be6398-acc0-4bca-b16b-bcf4126676f3.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951142-e87a5613-76d0-4b17-85b2-d71d88c4f560.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951207-449ef035-2ff2-4484-a487-3f9bf937b016.png)
 
  Hasil visualisasi di atas memberikan informasi mengenai rata-rata kandungan N, P, K terhadap setiap label crop. Dimana dapat dilihat bahwa terdapat beberapa label crop yang membutuhkan lahan dengan kandungan N,P,K tinggi dan beberapa label membutuhkan lahan dengan kandungan N,P,K rendah.
   
   Berikut visualisasi rata-rata tingkat `temperature, humidity dan rainfall` terhadap setiap label :
   
-  ![image.png](attachment:image.png)
-  ![image-2.png](attachment:image-2.png)
-  ![image-3.png](attachment:image-3.png)
-  ![image-4.png](attachment:image-4.png)
-  ![image-5.png](attachment:image-5.png)
-  ![image-6.png](attachment:image-6.png)
-  ![image-7.png](attachment:image-7.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951307-259b364c-7de7-4454-85a1-d1ddee331acb.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951379-22339db2-e61b-49b7-b2ea-09f446783579.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951443-4e3e6559-1daf-474b-8451-349879d31789.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951517-0bce0beb-8651-4a0b-8012-b78c71f5f909.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951574-b8bec408-f1c3-42ae-9ea8-7c12777ba8c2.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951631-deaf5997-1f77-4e23-a8da-09176656fa2e.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951702-262de500-8812-4ac2-9b32-ad921f83d530.png)
 
   Hasil visualisasi di atas memberikan informasi mengenai tingkat temperature, humidity dan rainfall terhadap setiap label crop. Dimana dapat dilihat bahwa terdapat beberapa label crop yang membutuhkan lahan dengan tingkat temperature, humidity dan rainfall tinggi dan beberapa label membutuhkan lahan dengan tingkat temperature, humidity dan rainfall rendah.
 
 - **Korelasi antar Fitur Numerik**
   <br> Berikut merupakan _Correlation Matrix_ antar fitur numerik :
   
-  ![image.png](attachment:image.png)
+  ![image](https://user-images.githubusercontent.com/68520848/185951834-f7d5ca82-927e-4803-b221-492f5fab6757.png)
   
   Dari _Correlation Matrix_ dapat dilihat bahwa fitur P dan K memiliki korelasi yang sedikit tinggi.
 
@@ -178,10 +178,10 @@ Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ y
   <br> Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) dari library Scikitlearn dengan nilai k = 1. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian. Hasil pengujian dari model dengan algoritma K-Nearest Neighbor dapat dilihat pada tabel berikut :
   <p>Classification Report</p>
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/68520848/185952014-f0ceef62-c400-4a94-bb25-fff808cffe71.png)
 
 Confusion Matrix <br>
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/68520848/185952107-7cdabfe6-4cbb-45ba-a2e3-fb481e5b247c.png)
   
   Berdasarkan hasil pengujian di atas dapat dilihat bahwa model dengan algoritma K-Nearest Neighbor memperoleh nilai akurasi yaitu sebesar 0.986364.
 
@@ -189,11 +189,11 @@ Confusion Matrix <br>
   <br> Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [XGBClassifier](https://xgboost.readthedocs.io/en/latest/python/python_api.html) dari library xgboost. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian. Hasil pengujian dari model dengan XGBoost Algorithm dapat dilihat pada tabel berikut :
   <p>Classification Report</p>
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/68520848/185952200-5977a2dd-2cb3-4141-a2eb-747521d45e65.png)
 
  Confusion Matrix <br>
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/68520848/185952285-b796d90d-90a3-4320-990b-14e9552c40d5.png)
 
 Berdasarkan hasil pengujian di atas dapat dilihat bahwa model dengan algoritma XGBoost memperoleh nilai akurasi yaitu sebesar 0.995455.
 
@@ -201,19 +201,15 @@ Berdasarkan hasil pengujian di atas dapat dilihat bahwa model dengan algoritma X
   <br> Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [RandomForestClassifier](https://scikitlearn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) dari library Scikitlearn. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian. Hasil pengujian dari model dengan algoritma Random Forest dapat dilihat pada tabel berikut :
   <p>Classification Report</p>
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/68520848/185952397-9e6f9995-4fdd-48c1-80fd-ec36be61be30.png)
 
  Confusion Matrix <br>
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/68520848/185952466-f4b97c7e-4e97-44e4-9a68-c05c8b0a9edb.png)
 
 Berdasarkan hasil pengujian di atas dapat dilihat bahwa model dengan algoritma Random Forest memperoleh nilai akurasi yaitu sebesar 0.997727.
 
-Dari hasil pengujian ketiga model yang telah dibuat, berikut merupakan perbandingan performa antar Model :
-
-![image.png](attachment:image.png)
-
-Dari tabel di atas dapat memberikan informasi bahwa ketiga model yang dibangun memiliki nilai akurasi di atas 98%. Dimana dapat dilihat juga bahwa model dengan algoritma Random Forest memiliki performa (nilai akurasi, precision, dan recall) yang lebih baik dari model dengan algoritma K-Nearest Neighbor dan XGBoost. 
+Dilihat dari akurasi ketiga metode, akurasi paling tinggi adalah metode random forest. Jadi, kedepannya model ini akan dikembangkan dengan metode random forest.
 
 # *Evaluation*
 
@@ -234,8 +230,25 @@ Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ d
   
   <img width="267" alt="recall" src="https://user-images.githubusercontent.com/71582007/139705495-a20297ee-a787-4ca8-910f-3863246413ab.PNG">
 
-Pada proyek ini, menghitung nilai akurasi, precsion dan recall dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn dan menambahkan parameter average = 'macro'.
+Pada proyek ini, menghitung nilai akurasi, precision, dan recall dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn.
+
+Dari hasil pengamatan metrics akurasi, presisi, dan recall pada ketiga metode tersebut, didapatkan informasi sebagai berikut:
+
+![image](https://user-images.githubusercontent.com/68520848/185952548-4c4d97c2-3099-4922-a0db-e979d089e107.png)
+
+Dari tabel di atas dapat memberikan informasi bahwa ketiga model yang dibangun memiliki nilai akurasi di atas 98%. Dimana dapat dilihat juga bahwa model dengan algoritma Random Forest memiliki performa (nilai akurasi, precision, dan recall) yang lebih baik dari model dengan algoritma K-Nearest Neighbor dan XGBoost. 
+
 
 # Daftar Pustaka
 
-![image-2.png](attachment:image-2.png)
+Fatiharani, F. R. (2022). PENGARUH PUPUK KANDANG AYAM DAN DOLOMIT TERHADAP NITROGEN ( N ), FOSFOR ( P ) DAN KALIUM ( K ) TANAH SERTA PERTUMBUHAN DAN HASIL TANAMAN     
+    SORGUM ( Sorghum bicolor ( L .) Moench ) PADA TANAH PASANG SURUT THE EFFECTS OF CHICKEN MANURE FERTILIZER AND DOLOMITE ON SOIL ’ S NITROGEN ( N ), PHOSPHOR ( P )
+    AND POTASSIUM ( K ) ALSO GROWTH AND PRODUCTION OF SORGHUM ( Sorghum bicolor ( L .) Moench ) IN TIDAL SOIL.
+Kusumaningrum, S. I. (2019). Pemanfaatan Sektor Pertanian Sebagai Penunjang Pertumbuhan Perekonomian Indonesia. Transaksi, 11(1), 80–89.
+    http://ejournal.atmajaya.ac.id/index.php/transaksi/article/view/477
+Mulziatuddin, M., & Aidar, N. (2018). ANALISIS PENDAPATAN PEMILIK LAHAN AKIBAT DAMPAK ALIH FUNGSI LAHAN PERTANIAN KE PERUMAHAN (Studi Kasus: Kecamatan Ingin
+    Jaya,Kabupaten Aceh Besar). Jurnal Ilmiah Mahasiswa (JIM) ISSN.2549-8355 Ekonomi PembangunanFakultas Ekonomi Dan Bisnis Unsyiah, 3(2), 7.
+Telaah, D., Niaga, T., & Pertanian, P. (2020). Tata niaga produk pertanian. 13–28.
+Wiratama, A. A., & Dewi, N. W. Y. (2021). Penentuan Harga Pokok Produksi Cengkeh Pada Petani Di Catur Desa. Jurnal Ilmiah Mahasiswa Akuntansi, 12(2), 436–445.
+
+

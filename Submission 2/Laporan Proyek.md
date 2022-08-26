@@ -115,40 +115,40 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini diantaranya :
 
     -   **Top 10 dari tahun penerbitan, penulis dan buku.**
 
-        ![Tahun Penerbitan](https://user-images.githubusercontent.com/71582007/141676271-ace4771e-04f7-4f2d-80fe-c7dfae4ff363.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793579-36e66164-ac23-456f-9fe4-4aea4bb2c780.png)
 
         Dari hasil visualisasi di atas didapatkan informasi bahwa top 10 tahun penerbitan yaitu pada tahun 1995, 1996, 1997, 1994, 1998, 2000, 2003, 1999, 2001 dan 2002. Kemudian tahun 2002 merupakan tahun dengan jumlah buku terbit paling tinggi, dimana jumlah buku yang terbit pada tahun itu sebesar 87.088K.
 
-        ![penulis](https://user-images.githubusercontent.com/71582007/141676352-f165a013-8463-4555-a66a-52ccb164b59a.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793542-74626d61-c10f-4c4c-8a17-142dcb1ffadf.png)
 
         Dari hasil visualisasi di atas didapatkan informasi bahwa top 10 penulis yaitu Janet Evanovich, Sue Grafton, Danielle Steel, Tom Clancy, Dean R. Knoontz, Marry Higgins Clark, James Patterson, John Grisham, Nora Roberts dan Stephen King. Kemudian Stephen King merupakan penulis dengan jumlah buku paling tinggi, dimana jumlah buku yang ditulis sebanyak 9679 buku.
 
-        ![buku](https://user-images.githubusercontent.com/71582007/141676357-a1ded35f-1ab6-44f5-ba06-4ceec1d58cc3.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793610-7ae9cb99-bd8b-4f99-b83f-cd69e5bb4ce7.png)
 
         Dari hasil visualisasi di atas didapatkan informasi bahwa top 10 buku yaitu angels demons, the red tent bestselling backlist, divine secrets of the yaya sisterhood a novel, the secret life of beees, bridget joness diary, the nanny diaries a novel, a painted house, the davinci code, the lonely bones a novel dan wild animus. Kemudian wild animus merupakan buku yang paling diminati dengan jumlah pembaca paling tinggi yaitu 2381 pembaca.
 
     -   **Distribusi rating buku dan umur user.**
     
-        ![rating](https://user-images.githubusercontent.com/71582007/141676461-289f610d-9cc5-4a23-abc9-e7035dd9deec.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793767-c4fcf74b-2c9e-4ab7-b582-590870cf7031.png)
 
         Dari hasil visualisasi di atas didapatkan informasi bahwa nilai pada kolom rating berada pada rentang 0 - 10. Pada hasil visualisai juga terlihat sebagian besar buku memiliki rating 0.
 
-        ![umur](https://user-images.githubusercontent.com/71582007/141676464-e01f4e4b-47eb-473d-8c12-85db84b58797.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793740-bae6ba5e-e44c-4479-a01b-2d4b1a400629.png)
 
         Dari hasil visualisasi di atas didapatkan informasi bahwa umur pengguna/user berada pada rentang 5 - 99 tahun. Pada hasil visualisai juga terlihat sebagian besar pengguna berada pada umur 34 tahun.
 
     -   **Wordcloud pada judu, penulis dan penerbit buku.**
         <br><br> Wordcloud kolom penulis (book_author)
 
-        ![author](https://user-images.githubusercontent.com/71582007/141676630-6595b50e-0349-43ef-b88a-7e0923c4058c.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793837-4cd567fd-2c41-49b2-b431-e02c42c854bb.png)
 
         Wordcloud kolom judul buku (book_title)
 
-        ![title](https://user-images.githubusercontent.com/71582007/141676642-3126a986-b1aa-4230-8b42-ba75d7c37cab.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793872-9ed7cb38-b685-4654-b5ce-3020aa173495.png)
 
         Wordcloud kolom penerbit (publisher)
 
-        ![penerbit](https://user-images.githubusercontent.com/71582007/141676652-7080608f-ef4e-4e43-8317-f77ddd216745.png)
+        ![image](https://user-images.githubusercontent.com/68520848/186793906-4ad2f4f8-51b1-470e-986b-2bac25195ab1.png)
 
         Dari hasil visualisasi di atas menunjukkan daftar kata-kata yang digunakan dalam dalam kolom book_author, book_title dan publisher, umumnya semakin banyak kata yang digunakan semakin besar ukuran kata tersebut dalam visualisasi. Pada visualisai terlihat bahwa kata-kata yang paling banyak muncul pada kolom book_author yaitu Stephen King dan King Stephen, pada kolom book_title yaitu novels paperback dan mysteries paperback dan pada kolom publisher yaitu Ballantine Books dan Publishing Group.
 
@@ -173,7 +173,7 @@ Berikut ini merupakan tahapan-tahapan dalam melakukan persiapan data :
     -   **Mengubah format data menjadi pivot tabel.**
         <br> Sebelum masuk ke pembuatan model rekomendasi menggunakan KNN, terlebih dahulu kita harus mengubah data rating buku menjadi format yang tepat yang dapat digunakan oleh model KNN. Data rating buku akan di reshape ke dalam m x n array, dimana m merupakan jumlah buku dan n merupakan jumlah user, hal tersebut dapat meringkas nilai fitur pada dataframe ke dalam tabel dua dimensi yang rapi (pivot tabel) dengan judul buku (kolom book_title) menjadi indeks tabel, id user (kolom user_id) menjadi kolom tabel dan kolom rating menjadi nilai pada setiap baris tabel. Pada proyek ini, mengubah dataframe ke dalam pivot tabel dengan menggunakan modul [pivot_table](https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html) dari pandas. Kemudian selanjutnya kita akan mengisi pengamatan yang hilang (data kosong) dengan nilai nol karena kita akan melakukan operasi aljabar linier (menghitung jarak antar vektor). Berikut merupakan pivot tabel yang dihasilkan :
         
-        <img width="859" alt="pivot tabel" src="https://user-images.githubusercontent.com/71582007/141689809-9ddb85a5-7045-4b8f-95e3-27b168f5cc04.PNG">
+        ![image](https://user-images.githubusercontent.com/68520848/186794005-bad28cf2-00d5-4601-83f9-b4a31fd2be17.png)
 
     -   **Mengkonversi value (rating) pada pivot tabel ke dalam scipy sparse matrix.**
         <br> Data dalam pivot tabel dapat dikatakan sebagai sparse matrix dengan shape 3602 x 46833. Sparse matrix merupakan matrix yang sebagian besar nilainya adalah nol. Tentu saja kita tidak ingin mengumpankan seluruh data dengan sebagian besar bernilai nol dalam tipe data float32 ke model KNN yang akan dibuat. Oleh karena itu untuk perhitungan yang lebih efisien dan mengurangi memory footprint, kita perlu mengubah nilai pada pivot tabel menjadi scipy sparse matrix dengan menggunakan modul [csr_matrix](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html) pada library scipy.
@@ -195,7 +195,7 @@ Pada proyek ini, model yang dibuat merupakan sistem rekomendasi untuk merekomend
 -   **Dengan pendekatan Item-Based dengan algoritma K-Nearest Neighbor.**
     <br> Untuk membangun model ini, digunakan fungsi [NearestNeighbor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NearestNeighbors.html) dari sklearn dengan parameter metriksnya yakni 'cosine' sehingga algoritma akan menghitung kesamaan cosinus antara vektor rating dan juga parameter algoritma yang digunakan untuk menghitung tetangga terdekat adalah 'brute'. Kemudian fungsi tersebut di inisialisasikan sebagai model_knn yang selanjutnya dilakukan fitting terhadap data yang berupa sparse matrix. Setelah itu dibuat fungsi recomend_book untuk memberikan rekomendasi terhadap suatu judul buku. Hasil rekomendasinya adalah seperti berikut :
     
-    <img width="500" height="300" alt="deep learning1" src="https://user-images.githubusercontent.com/71582007/142621275-2b773b21-7232-41d7-9713-6f0222f765ac.PNG">
+    ![image](https://user-images.githubusercontent.com/68520848/186794492-85b66511-447e-42f3-a9ed-c40b351a1acc.png)
 
     Dengan model K-Nearest Neighbor, kita mendapatkan 10 buku hasil rekomendasi terhadap buku dengan judul 'the rescue' dengan distance > 0.80.
 
@@ -204,7 +204,7 @@ Pada proyek ini, model yang dibuat merupakan sistem rekomendasi untuk merekomend
     
     Untuk mendapatkan rekomendasi resto, pertama kita ambil sampel user secara acak dan definisikan variabel books_not_read yang merupakan daftar buku yang belum pernah dibaca oleh pengguna, daftar books_not_read inilah yang akan menjadi buku yang kita rekomendasikan. Variabel books_not_read diperoleh dengan menggunakan operator bitwise (~) pada variabel books_read_by_user. Sebelumnya, pengguna telah memberi rating pada beberapa buku yang telah mereka baca. Kita menggunakan rating ini untuk membuat rekomendasi buku yang mungkin cocok untuk pengguna. Kemudian, untuk memperoleh rekomendasi buku, gunakan fungsi model.predict() dari library Keras. Hasil rekomendasinya adalah seperti berikut :
     
-    <img width="512" height="488" alt="deep learning" src="https://user-images.githubusercontent.com/71582007/141725822-0751b6cb-2a0c-4953-9dc8-4730c6575de5.PNG">
+    ![image](https://user-images.githubusercontent.com/68520848/186796305-aa31b709-ee75-4170-bfb4-37c3c190496c.png)
     
     Dengan pendekatan Deep Learning, kita dapat melihat top 10 buku yang direkomendasikan untuk user dengan id 219951. Dari beberapa buku rekomendasi menyediakan kategori 'Fiction', '9', dan 'Juvenile Fiction' yang sesuai dengan rating user. Kita memperoleh 1 rekomendasi buku dengan kategori 'Fiction', 6 rekomendasi buku dengan kategori '9' dan 3 rekomendasi buku dengan kategori 'Juvenile Fiction'.
 
@@ -216,28 +216,24 @@ Pada proyek ini, untuk mengukur kinerja model dengan pendekatan Deep Learning un
 
 Berikut merupakan visualisai metrik pada proses training terhadap model Deep Learning sebelumnya :
 
-![evaluasi1](https://user-images.githubusercontent.com/71582007/142618544-5eb6baa5-542a-4f82-91a2-fc89cbe46ccb.png)
+![image](https://user-images.githubusercontent.com/68520848/186796350-02477b92-6456-490e-9535-356223497e18.png)
 
-Pada proses training dapat dilihat model cukup smooth dan model konvergen pada epochs sekitar 200. Dari proses ini, kita memperoleh nilai error akhir sebesar sekitar 0.29 dan error pada data validasi sebesar 0.33. Nilai tersebut cukup bagus untuk sistem rekomendasi. 
+Pada proses training dapat dilihat model cukup smooth dan model konvergen pada epochs sekitar 30. Dari proses ini, saya memperoleh nilai error akhir sebesar sekitar 0.3407 dan error pada data validasi sebesar 0.3491. Nilai tersebut cukup bagus untuk sistem rekomendasi. 
 
-<img width="650" height="70" alt="evaluasi-all" src="https://user-images.githubusercontent.com/71582007/142619006-b3936e9d-2199-4f03-82a4-432ad37a7420.PNG">
+![image](https://user-images.githubusercontent.com/68520848/186797600-2303392e-5371-45ce-8ccf-738f941d73de.png)
 
-Kemudian setelah dilakukan evaluasi menggunakan seluruh data, model memperoleh nilai error sebesar 0.31.
+Kemudian setelah dilakukan evaluasi menggunakan seluruh data, model memperoleh nilai error sebesar 0.3702.
 
-## _Referensi:_
+## Penutup
 
-[[1](https://media.neliti.com/media/publications/96720-ID-rumah-baca-jendela-dunia-sebuah-model-pe.pdf)] Gresi A.R., Alan N., Khasanah B.R., Robby A.S., Priyadi N.P. (2013). _Rumah Baca Jendela Dunia, Sebuah Model Perpustakaan Panti Asuhan_. Jurnal Ilmiah Mahasiswa, Vol. 3 No.2. https://media.neliti.com/media/publications/96720-ID-rumah-baca-jendela-dunia-sebuah-model-pe.pdf
+Model Machine Learning berupa sistem rekomendasi buku bagi pengguna menggunakan Collaborative Filtering telah selesai dibuat. Setelah diujikan, model ini bekerja cukup baik dalam memberikan 10 rekomendasi teratas terhadap buku berdasarkan preferensi pengguna sebelumnya.
 
-[[2](https://journal.iainkudus.ac.id/index.php/Libraria/article/download/1189/1082)] Shofaussamawati. (2014). _Menumbuhkan Minat Baca dengan Pengenalan Perpustakaan Pada Anak Sejak Dini_. Jurnal IAIN, Vol. 2 No.1. https://journal.iainkudus.ac.id/index.php/Libraria/article/download/1189/1082
+## Daftar Pustaka
 
-[[3](http://eprints.undip.ac.id/65823/1/laporan_24010311130044_1.pdf)] Ritdrix, A.H. (2018). _Sistem Rekomendasi Buku Menggunakan Metode Item-Based Collaborative Filtering_. Universitas Diponegoro. http://eprints.undip.ac.id/65823/1/laporan_24010311130044_1.pdf
+Andrew Hans Ritdrix, P. W. W. (2018). Sistem rekomendasi buku menggunakan metode item-based collaborative filtering. Jurnal Masyarakat Informatika, 9, 24–32.
 
-[[4](https://medium.com/@ranggaantok/bagaimana-sistem-rekomendasi-berkerja-e749dac64816)] Rangga, R. A. (2018). _Bagaimana Sistem Rekomendasi Berkerja?_. Medium. https://medium.com/@ranggaantok/bagaimana-sistem-rekomendasi-berkerja-e749dac64816
+Hadi Ati, S., Saptono, R., & Salamah, U. (2016). Peningkatan Efektivitas Metode User-item based Collaborative Filtering pada Sistem Rekomendasi Wisata Kuliner Kota Solo. Jurnal Teknologi & Informasi ITSmart, 1(1), 01. https://doi.org/10.20961/its.v1i1.574
 
-[[5](https://ejournal.upi.edu/index.php/JATIKOM/article/download/33208/14281)] Agustian, E. R., Munir, Nugroho, E. P. (2020). _Sistem Rekomendasi Film Menggunakan Metode Collaborative Filtering dan K-Nearest Neighbors_.Jurnal Aplikasi dan Teori Ilmu Komputer, Vol. 3 No. 1. https://ejournal.upi.edu/index.php/JATIKOM/article/download/33208/14281
+Patiung, D. (2016). Membaca Sebagai Sumber Pengembangan Intelektual. Al Daulah : Jurnal Hukum Pidana Dan Ketatanegaraan, 5(2), 352–376. https://doi.org/10.24252/ad.v5i2.4854
 
-[[6](https://journals.telkomuniversity.ac.id/tektrika/article/view/1846/1141)] Gusti, I. G., Nasrun, M., Nugrahaeni, R. A. (2020). _Rekomendasi Sistem Pemilihan Mobil Menggunakan K-Nearest Neighbor (KNN) CollaborativeE Filtering_.Jurnal TEKTRIKA, Vol.4, No.1. https://journals.telkomuniversity.ac.id/tektrika/article/view/1846/1141
-
-[[7](https://www.dicoding.com/blog/mengenal-deep-learning/)] Setiawan, R. (2021). _Mengenal Deep Learning Lebih Jelas_.Dicoding. https://www.dicoding.com/blog/mengenal-deep-learning/
-
-[[8](https://www.khoiri.com/2020/12/cara-menghitung-root-mean-square-error-rmse.html)] Khoiri. (2020). _Pengertian dan Cara Menghitung Root Mean Square Error (RMSE). https://www.khoiri.com/2020/12/cara-menghitung-root-mean-square-error-rmse.html
+Shofaussamawati. (2014). Menumbuhkan minat baca dengan pengenalan perpustakaan pada anak sejak dini. Libraria, 2(1), 46–59.
